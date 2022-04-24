@@ -1,0 +1,23 @@
+total TestNum：2
+
+
+[TEST0] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+cfgGem h//SingleVariableDeclaration
+UGemDao.updateGidEid(0,gid,uid,0,0); //函数调用
+updateHeroAbility(uid,hid); //函数调用
+DBRecord hero=getHeroAbility(uid,gem.getInt("geid")); //初始化赋值|函数调用
+gem=UGemDao.getDataCols(uid,gid); //变量赋值|函数调用
+return CmdJSONArray.success(gem,hero); //返回
+end
+
+
+
+[TEST1] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+cfgGem h//SingleVariableDeclaration
+cfg//简单名
+UGemDao.updateGidEid(0,gid,uid,0,0); //函数调用
+updateHeroAbility(uid,hid); //函数调用
+DBRecord hero=getHeroAbility(uid,gem.getInt("geid")); //初始化赋值|函数调用
+gem=UGemDao.getDataCols(uid,gid); //变量赋值|函数调用
+return CmdJSONArray.success(gem,hero); //返回
+end

@@ -1,0 +1,71 @@
+total TestNum锛�5
+
+
+[TEST0] putOffGem(鍙傛暟锛�[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//鏉′欢璇彞
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"鏂扮殗鍩庤疆鏁版湭杈炬爣"); //杩斿洖
+end
+
+
+
+[TEST1] putOffGem(鍙傛暟锛�[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//鏉′欢璇彞
+int gid=params.getIntValue(0); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+DBRecord gem=UGemDao.getDataCols(uid,gid); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+gem.isEmpty()//鏉′欢璇彞
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"璇ュ疂鐭充笉瀛樺湪"); //杩斿洖
+end
+
+
+
+[TEST2] putOffGem(鍙傛暟锛�[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//鏉′欢璇彞
+int gid=params.getIntValue(0); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+DBRecord gem=UGemDao.getDataCols(uid,gid); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+gem.isEmpty()//鏉′欢璇彞
+int geid=gem.getInt("geid"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+int gemId=gem.getInt("gem_id"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+int hid=gem.getInt("hid"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+geid == 0//鏉′欢璇彞
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"璇ュ疂鐭虫病鏈変僵鎴�"); //杩斿洖
+end
+
+
+
+[TEST3] putOffGem(鍙傛暟锛�[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//鏉′欢璇彞
+int gid=params.getIntValue(0); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+DBRecord gem=UGemDao.getDataCols(uid,gid); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+gem.isEmpty()//鏉′欢璇彞
+int geid=gem.getInt("geid"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+int gemId=gem.getInt("gem_id"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+int hid=gem.getInt("hid"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+geid == 0//鏉′欢璇彞
+CfgGem cfg=CfgGemManager.getByGemId(gemId); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+cfg == null//鏉′欢璇彞
+UGemDao.updateGidEid(0,gid,uid,0,0); //鍑芥暟璋冪敤
+updateHeroAbility(uid,hid); //鍑芥暟璋冪敤
+DBRecord hero=getHeroAbility(uid,gem.getInt("geid")); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+gem=UGemDao.getDataCols(uid,gid); //鍙橀噺璧嬪�紎鍑芥暟璋冪敤
+return CmdJSONArray.success(gem,hero); //杩斿洖
+end
+
+
+
+[TEST4] putOffGem(鍙傛暟锛�[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//鏉′欢璇彞
+int gid=params.getIntValue(0); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+DBRecord gem=UGemDao.getDataCols(uid,gid); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+gem.isEmpty()//鏉′欢璇彞
+int geid=gem.getInt("geid"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+int gemId=gem.getInt("gem_id"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+int hid=gem.getInt("hid"); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+geid == 0//鏉′欢璇彞
+CfgGem cfg=CfgGemManager.getByGemId(gemId); //鍒濆鍖栬祴鍊紎鍑芥暟璋冪敤
+cfg == null//鏉′欢璇彞
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"瀹濈煶閰嶇疆閿欒"); //杩斿洖
+end

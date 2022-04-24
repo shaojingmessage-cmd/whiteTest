@@ -1,0 +1,13 @@
+total TestNum：2
+
+
+[TEST0] visit(参数：[EnhancedForStatement n])
+int a//SingleVariableDeclaration
+end
+
+
+
+[TEST1] visit(参数：[EnhancedForStatement n])
+int a//SingleVariableDeclaration
+alist//简单名
+end
