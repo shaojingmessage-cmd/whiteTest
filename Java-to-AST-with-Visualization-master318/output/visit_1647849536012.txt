@@ -1,0 +1,296 @@
+total TestNum：8
+
+
+[TEST0] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+[Yes]->
+reversemapping.put(ownid,stateList); //函数调用
+lastpoint.get(ownid) == null//条件语句
+[Yes]->
+List<Integer> formap=new ArrayList<>(); //初始化赋值|创建对象
+formap.add(condition.hashCode()); //函数调用
+formap.add(tempParamenter.hashCode()); //函数调用
+lastpoint.put(ownid,formap); //函数调用
+exchangeId.put(ownid,tempid); //函数调用
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+return false; //返回
+end
+
+
+
+[TEST1] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+[Yes]->
+reversemapping.put(ownid,stateList); //函数调用
+lastpoint.get(ownid) == null//条件语句
+[Yes]->
+List<Integer> formap=new ArrayList<>(); //初始化赋值|创建对象
+formap.add(condition.hashCode()); //函数调用
+formap.add(tempParamenter.hashCode()); //函数调用
+lastpoint.put(ownid,formap); //函数调用
+exchangeId.put(ownid,tempid); //函数调用
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+[Yes]->
+List<Integer> forPreids=new ArrayList<>(); //初始化赋值|创建对象
+forPreids=getNewPreids(reversemapping.get(ppid),n,forPreids); //变量赋值|函数调用
+forPreids=getResultList(forList.get(forList.size() - 1).astNode.hashCode(),forPreids); //变量赋值|函数调用
+conditionNode.setPreIds(forPreids); //函数调用
+addlink(conditionNode); //函数调用
+return false; //返回
+end
+
+
+
+[TEST2] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+[Yes]->
+reversemapping.put(ownid,stateList); //函数调用
+lastpoint.get(ownid) == null//条件语句
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+return false; //返回
+end
+
+
+
+[TEST3] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+[Yes]->
+reversemapping.put(ownid,stateList); //函数调用
+lastpoint.get(ownid) == null//条件语句
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+[Yes]->
+List<Integer> forPreids=new ArrayList<>(); //初始化赋值|创建对象
+forPreids=getNewPreids(reversemapping.get(ppid),n,forPreids); //变量赋值|函数调用
+forPreids=getResultList(forList.get(forList.size() - 1).astNode.hashCode(),forPreids); //变量赋值|函数调用
+conditionNode.setPreIds(forPreids); //函数调用
+addlink(conditionNode); //函数调用
+return false; //返回
+end
+
+
+
+[TEST4] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+lastpoint.get(ownid) == null//条件语句
+[Yes]->
+List<Integer> formap=new ArrayList<>(); //初始化赋值|创建对象
+formap.add(condition.hashCode()); //函数调用
+formap.add(tempParamenter.hashCode()); //函数调用
+lastpoint.put(ownid,formap); //函数调用
+exchangeId.put(ownid,tempid); //函数调用
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+return false; //返回
+end
+
+
+
+[TEST5] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+lastpoint.get(ownid) == null//条件语句
+[Yes]->
+List<Integer> formap=new ArrayList<>(); //初始化赋值|创建对象
+formap.add(condition.hashCode()); //函数调用
+formap.add(tempParamenter.hashCode()); //函数调用
+lastpoint.put(ownid,formap); //函数调用
+exchangeId.put(ownid,tempid); //函数调用
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+[Yes]->
+List<Integer> forPreids=new ArrayList<>(); //初始化赋值|创建对象
+forPreids=getNewPreids(reversemapping.get(ppid),n,forPreids); //变量赋值|函数调用
+forPreids=getResultList(forList.get(forList.size() - 1).astNode.hashCode(),forPreids); //变量赋值|函数调用
+conditionNode.setPreIds(forPreids); //函数调用
+addlink(conditionNode); //函数调用
+return false; //返回
+end
+
+
+
+[TEST6] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+lastpoint.get(ownid) == null//条件语句
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+return false; //返回
+end
+
+
+
+[TEST7] visit(参数：[EnhancedForStatement n])
+Expression condition=n.getExpression(); //初始化赋值|函数调用
+SingleVariableDeclaration tempParamenter=n.getParameter(); //初始化赋值|函数调用
+MyASTNode conditionNode=getNode(condition); //初始化赋值|函数调用
+MyASTNode paramenterNode=getNode(tempParamenter); //初始化赋值|函数调用
+List<ASTNode> stateList=new ArrayList<>(); //初始化赋值|创建对象
+stateList.add(condition); //函数调用
+stateList.add(tempParamenter); //函数调用
+int ownid=n.hashCode(); //初始化赋值|函数调用
+int ppid=n.getParent().hashCode(); //初始化赋值|函数调用
+List<Integer> temptest=lastpoint.get(ownid); //初始化赋值|函数调用
+int tempid=condition.hashCode(); //初始化赋值|函数调用
+reversemapping.get(ownid) == null//条件语句
+lastpoint.get(ownid) == null//条件语句
+List<MyASTNode> forList=new ArrayList<>(); //初始化赋值|创建对象
+forList.add(conditionNode); //函数调用
+forList.add(paramenterNode); //函数调用
+MyASTNode prepic=conditionNode; //初始化赋值|简单名
+MyASTNode pic=paramenterNode; //初始化赋值|简单名
+int id=prepic.astNode.hashCode(); //初始化赋值|函数调用
+List<Integer> picPreids=new ArrayList<>(); //初始化赋值|创建对象
+picPreids=getNormalResultPoint(id,picPreids); //变量赋值|函数调用
+pic.setPreIds(picPreids); //函数调用
+addlink(pic); //函数调用
+reversemapping.get(ppid) != null//条件语句
+[Yes]->
+List<Integer> forPreids=new ArrayList<>(); //初始化赋值|创建对象
+forPreids=getNewPreids(reversemapping.get(ppid),n,forPreids); //变量赋值|函数调用
+forPreids=getResultList(forList.get(forList.size() - 1).astNode.hashCode(),forPreids); //变量赋值|函数调用
+conditionNode.setPreIds(forPreids); //函数调用
+addlink(conditionNode); //函数调用
+return false; //返回
+end

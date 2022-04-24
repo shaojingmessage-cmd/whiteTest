@@ -1,0 +1,24 @@
+digraph "DirectedGraph" {
+graph [label = "putOffGem", labelloc=t, concentrate = true ];
+node [fontname = "FangSong" ];
+"1437941060" [ label="参数：[int uid, JSONArray params, IoSession ioSession]
+ 警告！！没有注释" ];
+"1804379080" [ label="([1804379080]cfgGem h,SingleVariableDeclaration)" type=44 shape=record ]
+"1239183618" [ label="([1239183618]cfg,简单名)" type=42 shape=record ]
+"912672706" [ label="([912672706]UGemDao.updateGidEid(0,gid,uid,0,0); ,函数调用)" type=21 shape=record ]
+"1785397234" [ label="([1785397234]updateHeroAbility(uid,hid); ,函数调用)" type=21 shape=record ]
+"373928166" [ label="([373928166]DBRecord hero=getHeroAbility(uid,gem.getInt(\"geid\")); ,初始化赋值|函数调用)" type=60 shape=record ]
+"8805846" [ label="([8805846]gem=UGemDao.getDataCols(uid,gid); ,变量赋值|函数调用)" type=21 shape=record ]
+"81412691" [ label="([81412691]return CmdJSONArray.success(gem,hero); ,返回)" type=41 shape=record ]
+"1111" [ label="end"  shape=box ]
+"1239183618" -> "1804379080"
+"963815509" -> "1239183618"
+"1804379080" -> "1239183618"
+"1239183618" -> "912672706"
+"1804379080" -> "912672706"
+"912672706" -> "1785397234"
+"1785397234" -> "373928166"
+"373928166" -> "8805846"
+"8805846" -> "81412691"
+"81412691" -> "1111"
+}

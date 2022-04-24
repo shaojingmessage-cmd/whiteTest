@@ -1,0 +1,64 @@
+
+V
+java:S1854F"@Remove this useless assignment to local variable "endStatement".(ðÐìç
+W
+java:S1854j"<Remove this useless assignment to local variable "tempbody".(žÓî™üÿÿÿÿ
+G
+java:S1481F"1Remove this unused "endStatement" local variable.(ðÐìç
+Q	java:S125U"<This block of commented-out lines of code should be removed.(À¦ãÞ
+V	java:S125X"<This block of commented-out lines of code should be removed.(·ÔÅèùÿÿÿÿ
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(¨ŠóËúÿÿÿÿ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(ø—í¢þÿÿÿÿ
+Q	java:S125a"<This block of commented-out lines of code should be removed.(§˜Íô
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(Ä°ëÇ
+H
+java:S1481j"-Remove this unused "tempbody" local variable.(žÓî™üÿÿÿÿ
+V	java:S125m"<This block of commented-out lines of code should be removed.(¤©ýçúÿÿÿÿ
+G
+java:S1481n",Remove this unused "passNum" local variable.( üÜ±ùÿÿÿÿ
+Q	java:S125t"<This block of commented-out lines of code should be removed.(¶ã«Ý
+d	java:S100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡öºå
+N
+java:S1135Œ"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(É¿°½ýÿÿÿÿ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ
+K
+java:S1128"0Remove this unused import 'java.util.Hashtable'.(Œ»ÏÊüÿÿÿÿ
+E
+java:S1128"/Remove this unused import 'java.util.Iterator'.(¥ÍòÕ
+E
+java:S1128
+"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ
+Q
+java:S1128";Remove this unused import 'org.eclipse.jdt.core.dom.Block'.(ñÍ ì
+\
+java:S1128"ARemove this unused import 'org.eclipse.jdt.core.dom.DoStatement'.(—ã±âÿÿÿÿÿ
+_
+java:S1128"DRemove this unused import 'org.eclipse.jdt.core.dom.EmptyStatement'.(Ÿ®…†ÿÿÿÿÿ
+_
+java:S1128"IRemove this unused import 'org.eclipse.jdt.core.dom.ExpressionStatement'.(ô³‹ê
+Z
+java:S1128"ERemove this unused import 'org.eclipse.jdt.core.dom.ReturnStatement'.(Á€´
+U
+java:S1128"@Remove this unused import 'org.eclipse.jdt.core.dom.SimpleName'.(ž¹ãk
+Z
+java:S1128"?Remove this unused import 'org.eclipse.jdt.core.dom.Statement'.(ƒÍãùýÿÿÿÿ
+n
+java:S1128"SRemove this unused import 'org.eclipse.jdt.core.dom.VariableDeclarationExpression'.(ÜÕþ–ÿÿÿÿÿ
+m
+java:S1128"RRemove this unused import 'org.eclipse.jdt.core.dom.VariableDeclarationStatement'.(€“þ¨ùÿÿÿÿ
+Z
+java:S1128"DRemove this unused import 'org.eclipse.jdt.core.dom.WhileStatement'.(ÔÛîÞ
+Z
+java:S1128 "?Remove this unused import 'com.java.jacoco.structure.DataNode'.(â¿àÃÿÿÿÿÿ
+T
+java:S1128!">Remove this unused import 'com.java.jacoco.structure.DotNode'.(ß¾˜¯
+[
+java:S1128""@Remove this unused import 'com.java.jacoco.structure.MyASTNode'.(šïô¨üÿÿÿÿ
+[
+java:S1128#"FRemove this unused import 'com.java.jacoco.structure.MyMethodDotNode'.(‰ÇÓ
+t
+java:S2293."YReplace the type specification in this constructor call with the diamond operator ("<>").(‘ÀÑ©ûÿÿÿÿ
+u
+java:S1104."ZMake methodNodeList a static final constant or non-public and provide accessors if needed.(‘ÀÑ©ûÿÿÿÿ

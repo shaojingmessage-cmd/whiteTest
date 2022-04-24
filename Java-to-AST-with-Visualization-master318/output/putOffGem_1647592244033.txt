@@ -1,0 +1,71 @@
+total TestNum：5
+
+
+[TEST0] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//条件语句
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"新皇城轮数未达标"); //返回
+end
+
+
+
+[TEST1] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//条件语句
+int gid=params.getIntValue(0); //初始化赋值|函数调用
+DBRecord gem=UGemDao.getDataCols(uid,gid); //初始化赋值|函数调用
+gem.isEmpty()//条件语句
+int geid=gem.getInt("geid"); //初始化赋值|函数调用
+int gemId=gem.getInt("gem_id"); //初始化赋值|函数调用
+int hid=gem.getInt("hid"); //初始化赋值|函数调用
+geid == 0//条件语句
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"该宝石没有佩戴"); //返回
+end
+
+
+
+[TEST2] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//条件语句
+int gid=params.getIntValue(0); //初始化赋值|函数调用
+DBRecord gem=UGemDao.getDataCols(uid,gid); //初始化赋值|函数调用
+gem.isEmpty()//条件语句
+int geid=gem.getInt("geid"); //初始化赋值|函数调用
+int gemId=gem.getInt("gem_id"); //初始化赋值|函数调用
+int hid=gem.getInt("hid"); //初始化赋值|函数调用
+geid == 0//条件语句
+CfgGem cfg=CfgGemManager.getByGemId(gemId); //初始化赋值|函数调用
+cfg == null//条件语句
+UGemDao.updateGidEid(0,gid,uid,0,0); //函数调用
+updateHeroAbility(uid,hid); //函数调用
+DBRecord hero=getHeroAbility(uid,gem.getInt("geid")); //初始化赋值|函数调用
+gem=UGemDao.getDataCols(uid,gid); //变量赋值|函数调用
+return CmdJSONArray.success(gem,hero); //返回
+end
+
+
+
+[TEST3] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//条件语句
+int gid=params.getIntValue(0); //初始化赋值|函数调用
+DBRecord gem=UGemDao.getDataCols(uid,gid); //初始化赋值|函数调用
+gem.isEmpty()//条件语句
+int geid=gem.getInt("geid"); //初始化赋值|函数调用
+int gemId=gem.getInt("gem_id"); //初始化赋值|函数调用
+int hid=gem.getInt("hid"); //初始化赋值|函数调用
+geid == 0//条件语句
+CfgGem cfg=CfgGemManager.getByGemId(gemId); //初始化赋值|函数调用
+cfg == null//条件语句
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"宝石配置错误"); //返回
+end
+
+
+
+[TEST4] putOffGem(参数：[int uid, JSONArray params, IoSession ioSession])
+_checkOpen(uid) == 0//条件语句
+int gid=params.getIntValue(0); //初始化赋值|函数调用
+DBRecord gem=UGemDao.getDataCols(uid,gid); //初始化赋值|函数调用
+gem.isEmpty()//条件语句
+[Yes]->
+return CmdJSONArray.errorMsg(uid,"该宝石不存在"); //返回
+end
