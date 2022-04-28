@@ -1,0 +1,138 @@
+* Starting client
+* Connecting to master process on port 18036
+* Analyzing classpath: 
+  - D:\whiteTest\Java-to-AST-with-Visualization-master318\target\test-classes
+  - D:\whiteTest\Java-to-AST-with-Visualization-master318\target\classes
+  - E:\mvnrep\org\eclipse\jdt\org.eclipse.jdt.core\3.7.1\org.eclipse.jdt.core-3.7.1.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.resources\3.7.100\org.eclipse.core.resources-3.7.100.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.expressions\3.4.300\org.eclipse.core.expressions-3.4.300.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.runtime\3.7.0\org.eclipse.core.runtime-3.7.0.jar
+  - E:\mvnrep\org\eclipse\osgi\org.eclipse.osgi\3.7.1\org.eclipse.osgi-3.7.1.jar
+  - E:\mvnrep\org\eclipse\equinox\org.eclipse.equinox.common\3.6.0\org.eclipse.equinox.common-3.6.0.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.jobs\3.5.100\org.eclipse.core.jobs-3.5.100.jar
+  - E:\mvnrep\org\eclipse\equinox\org.eclipse.equinox.registry\3.5.101\org.eclipse.equinox.registry-3.5.101.jar
+  - E:\mvnrep\org\eclipse\equinox\org.eclipse.equinox.preferences\3.4.1\org.eclipse.equinox.preferences-3.4.1.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.contenttype\3.4.100\org.eclipse.core.contenttype-3.4.100.jar
+  - E:\mvnrep\org\eclipse\equinox\org.eclipse.equinox.app\1.3.100\org.eclipse.equinox.app-1.3.100.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.filesystem\1.3.100\org.eclipse.core.filesystem-1.3.100.jar
+  - E:\mvnrep\org\eclipse\text\org.eclipse.text\3.5.101\org.eclipse.text-3.5.101.jar
+  - E:\mvnrep\org\eclipse\core\org.eclipse.core.commands\3.6.0\org.eclipse.core.commands-3.6.0.jar
+  - E:\mvnrep\org\apache\poi\poi-ooxml\3.15\poi-ooxml-3.15.jar
+  - E:\mvnrep\org\apache\poi\poi\3.15\poi-3.15.jar
+  - E:\mvnrep\commons-codec\commons-codec\1.10\commons-codec-1.10.jar
+  - E:\mvnrep\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar
+  - E:\mvnrep\org\apache\poi\poi-ooxml-schemas\3.15\poi-ooxml-schemas-3.15.jar
+  - E:\mvnrep\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar
+  - E:\mvnrep\stax\stax-api\1.0.1\stax-api-1.0.1.jar
+  - E:\mvnrep\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar
+  - E:\mvnrep\junit\junit\4.13.1\junit-4.13.1.jar
+  - E:\mvnrep\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar
+  - E:\mvnrep\org\jacoco\jacoco-maven-plugin\0.8.7\jacoco-maven-plugin-0.8.7.jar
+  - E:\mvnrep\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-model\3.0\maven-model-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar
+  - E:\mvnrep\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar
+  - E:\mvnrep\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar
+  - E:\mvnrep\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar
+  - E:\mvnrep\org\apache\maven\maven-core\3.0\maven-core-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar
+  - E:\mvnrep\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar
+  - E:\mvnrep\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar
+  - E:\mvnrep\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar
+  - E:\mvnrep\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar
+  - E:\mvnrep\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar
+  - E:\mvnrep\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar
+  - E:\mvnrep\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar
+  - E:\mvnrep\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar
+  - E:\mvnrep\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar
+  - E:\mvnrep\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar
+  - E:\mvnrep\org\codehaus\plexus\plexus-utils\3.0.22\plexus-utils-3.0.22.jar
+  - E:\mvnrep\org\apache\maven\shared\file-management\1.2.1\file-management-1.2.1.jar
+  - E:\mvnrep\org\apache\maven\shared\maven-shared-io\1.1\maven-shared-io-1.1.jar
+  - E:\mvnrep\org\apache\maven\maven-artifact-manager\2.0.2\maven-artifact-manager-2.0.2.jar
+  - E:\mvnrep\org\apache\maven\wagon\wagon-provider-api\1.0-alpha-6\wagon-provider-api-1.0-alpha-6.jar
+  - E:\mvnrep\org\codehaus\plexus\plexus-container-default\1.0-alpha-9\plexus-container-default-1.0-alpha-9.jar
+  - E:\mvnrep\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar
+  - E:\mvnrep\org\apache\maven\reporting\maven-reporting-api\3.0\maven-reporting-api-3.0.jar
+  - E:\mvnrep\org\apache\maven\doxia\doxia-sink-api\1.0\doxia-sink-api-1.0.jar
+  - E:\mvnrep\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7-runtime.jar
+  - E:\mvnrep\org\jacoco\org.jacoco.agent\0.8.7\org.jacoco.agent-0.8.7.jar
+  - E:\mvnrep\org\jacoco\org.jacoco.report\0.8.7\org.jacoco.report-0.8.7.jar
+  - E:\mvnrep\org\jacoco\org.jacoco.core\0.8.7\org.jacoco.core-0.8.7.jar
+  - E:\mvnrep\org\ow2\asm\asm\9.1\asm-9.1.jar
+  - E:\mvnrep\org\ow2\asm\asm-commons\9.1\asm-commons-9.1.jar
+  - E:\mvnrep\org\ow2\asm\asm-analysis\9.1\asm-analysis-9.1.jar
+  - E:\mvnrep\org\ow2\asm\asm-tree\9.1\asm-tree-9.1.jar
+* Finished analyzing classpath
+* Generating tests for class com.java.jacoco.ASTGenerator
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 11:11:38.266 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: D:\whiteTest\Java-to-AST-with-Visualization-master318\.evosuite\evosuite-seeds\com.java.jacoco.ASTGenerator.seed
+* Loaded 0 tests from D:\whiteTest\Java-to-AST-with-Visualization-master318\.evosuite\evosuite-seeds\com.java.jacoco.ASTGenerator.seed
+* Total number of test goals: 
+  - Line 61
+  - Branch 28
+  - Exception 0
+  - MutationFactory 25
+  - Output 6
+  - Method 4
+  - MethodNoException 4
+  - CBranchFitnessFactory 28
+* Using seed 1650424293021
+* Starting evolution
+* Search finished after 31s and 182 generations, 62172 statements, best individual has fitness: 125.61846689895471
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 34%
+* Total number of goals: 61
+* Number of covered goals: 21
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 18%
+* Total number of goals: 28
+* Number of covered goals: 5
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 52%
+* Total number of goals: 25
+* Number of covered goals: 13
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 50%
+* Total number of goals: 6
+* Number of covered goals: 3
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 4
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 18%
+* Total number of goals: 28
+* Number of covered goals: 5
+* Generated 9 tests with total length 32
+* Resulting test suite's coverage: 59% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 11:12:15.665 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+* Writing JUnit test case 'ASTGenerator_ESTest' to D:\whiteTest\Java-to-AST-with-Visualization-master318\.evosuite\tmp_2022_04_20_11_11_30\tests
+* Done!
+
